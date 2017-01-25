@@ -33,5 +33,11 @@ module.exports = {
     if (isNewFolder) {
       log.info(`cd ${chalk.yellow(folderName)} to get started!`)
     }
+
+    console.log('  yarn install')
+    console.log('  yarn dev')
+
+    console.log(chalk.green('\n  To build for production:\n'))
+    console.log('  yarn build\n')
   }
 }
