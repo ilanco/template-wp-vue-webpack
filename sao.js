@@ -3,12 +3,12 @@ const superb = require('superb')
 module.exports = {
   prompts: {
     name: {
-      message: 'What is the name of the new project?',
+      message: 'What is the name of the new theme?',
       role: 'folder:name'
     },
     description: {
-      message: 'How would you descripe the new project?',
-      default: `my ${superb()} project`
+      message: 'How would you descripe the new theme?',
+      default: `my ${superb()} theme`
     },
     username: {
       message: 'What is your GitHub username?',
