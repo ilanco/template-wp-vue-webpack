@@ -1,0 +1,18 @@
+{
+  "name": "template-wp-vue-webpack",
+  "version": "0.0.0",
+  "description": "A modern starter theme for Wordpress which uses Vue 2, Vuex, Vue-router and Webpack 2",
+  "repository": {
+    "url": "ilanco/template-wp-vue-webpack",
+    "type": "git"
+  },
+  "author": "ilanco <ilanco@gmail.com> (github.com/ilanco)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "dependencies": {
+    "superb": "^1.3.0"
+  }
+}
