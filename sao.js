@@ -1,12 +1,15 @@
 const superb = require('superb')
 
 module.exports = {
+  template: 'handlebars',
   prompts: {
     name: {
+      required: true,
       message: 'What is the name of the new theme?',
       role: 'folder:name'
     },
     description: {
+      required: false,
       message: 'How would you describe the new theme?',
       default: `my ${superb()} theme`
     },
@@ -27,6 +30,9 @@ module.exports = {
       },
       store: true
     }
+  },
+  filters: {
+    '.eslintrc': 'eslint'
   },
   post({log, chalk, isNewFolder, folderName}) {
     log.success('Done!')

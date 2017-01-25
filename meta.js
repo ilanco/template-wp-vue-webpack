@@ -1,23 +1,26 @@
 module.exports = {
   prompts: {
     name: {
-      message: `What is the name of the new theme?`,
+      type: "string",
+      required: true,
+      message: "What is the name of the new theme?"
     },
     description: {
-      message: `How would you describe the new theme?`,
-      default: `My superb Wordpress theme`
+      type: "string",
+      required: false,
+      message: "How would you describe the new theme?",
+      default: "My superb Wordpress theme"
     },
     username: {
-      message: `What is your GitHub username`,
-      default: ''
+      type: "string",
+      message: "What is your GitHub username"
     },
     email: {
-      message: `What is your GitHub email`,
-      default: ''
+      type: "string",
+      message: "What is your GitHub email"
     },
     website: {
-      message: `The URL of your website?`,
-      default: ''
+      message: "The URL of your website?",
     }
   },
   completeMessage: 'To get started:\n\n  cd {{destDirName}}\n  yarn\n  yarn dev\n'
