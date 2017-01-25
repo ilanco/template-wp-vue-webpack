@@ -13,6 +13,11 @@ module.exports = {
       message: 'How would you describe the new theme?',
       default: `my ${superb()} theme`
     },
+    website: {
+      message: 'The URL of your website?',
+      default: 'https://www.ou.org',
+      store: true
+    },
     username: {
       message: 'What is your GitHub username?',
       role: 'git:name',
@@ -21,13 +26,6 @@ module.exports = {
     email: {
       message: 'What is your GitHub email?',
       role: 'git:email',
-      store: true
-    },
-    website: {
-      message: 'The URL of your website?',
-      default({username}) {
-        return `github.com/${username}`
-      },
       store: true
     }
   },

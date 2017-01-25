@@ -11,6 +11,10 @@ module.exports = {
       message: "How would you describe the new theme?",
       default: "My superb Wordpress theme"
     },
+    website: {
+      message: 'The URL of your website?',
+      default: 'https://www.ou.org'
+    },
     username: {
       type: "string",
       message: "What is your GitHub username"
@@ -19,9 +23,6 @@ module.exports = {
       type: "string",
       message: "What is your GitHub email"
     },
-    website: {
-      message: "The URL of your website?",
-    }
   },
   completeMessage: 'To get started:\n\n  cd {{destDirName}}\n  yarn\n  yarn dev\n'
 }
