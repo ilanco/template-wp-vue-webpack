@@ -7,7 +7,7 @@ module.exports = {
       role: 'folder:name'
     },
     description: {
-      message: 'How would you descripe the new theme?',
+      message: 'How would you describe the new theme?',
       default: `my ${superb()} theme`
     },
     username: {

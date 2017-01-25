@@ -4,7 +4,7 @@ module.exports = {
       message: `What is the name of the new theme?`,
     },
     description: {
-      message: `How would you descripe the new theme?`,
+      message: `How would you describe the new theme?`,
       default: `My superb Wordpress theme`
     },
     username: {
