@@ -27,6 +27,15 @@ module.exports = {
       message: 'The URL of your production website (no trailing slash)?',
       default: 'https://www.ou.org'
     },
+    dev_website: {
+      message: 'The URL of your local development website (no trailing slash)?',
+      default({website}) {
+        var url = website.split("/")
+
+        return `${url[0]}//local.${url[2]}`
+      },
+      store: true
+    },
     text_domain: {
       message: 'Domain to retrieve the translated text?',
       default({name}) {
