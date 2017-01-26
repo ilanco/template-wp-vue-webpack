@@ -1,4 +1,5 @@
 {
+  "name": "{{ name }}",
   "entry": {
     "styles/main": [
       "./assets/css/main.scss"
