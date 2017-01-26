@@ -1,10 +1,13 @@
 const express = require('express')
 const fs = require('fs')
 const https = require('https')
+const path = require('path')
 const webpack = require('webpack')
 
 const config = require('../config')
 const webpackConfig = require('./webpack.dev.conf')
+
+var projectRoot = path.resolve(__dirname, '../')
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.devPort
@@ -54,8 +57,8 @@ app.use(devMiddleware)
 // enable hot-reload and state-preserving
 app.use(hotMiddleware)
 
-var key = fs.readFileSync(process.cwd() + '/localhost.key', 'utf8')
-var cert = fs.readFileSync(process.cwd() + '/localhost.cert', 'utf8')
+var key = fs.readFileSync(path.join(projectRoot, 'build', 'localhost.key'), 'utf8')
+var cert = fs.readFileSync(path.join(projectRoot, 'build', 'localhost.cert'), 'utf8')
 var httpsServer = https.createServer({key: key, cert: cert}, app)
 
 module.exports = httpsServer.listen(port, '0.0.0.0', function onStart(err) {
