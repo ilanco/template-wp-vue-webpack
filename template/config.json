@@ -1,0 +1,19 @@
+{
+  "entry": {
+    "styles/main": [
+      "./assets/css/main.scss"
+    ]
+  },
+  "watch": [
+  ],
+  "devUrl": "{{ website }}",
+  "devPort": 3000,
+  "publicPath": "{{ website }}:3000/content/themes/base",
+  "cacheBusting": "[name]_[hash:8]",
+  "env": {
+    "production": {
+    },
+    "development": {
+    }
+  }
+}
