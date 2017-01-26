@@ -7,9 +7,9 @@
   },
   "watch": [
   ],
-  "devUrl": "{{ website }}",
+  "devUrl": "{{ dev_website }}",
   "devPort": 3000,
-  "publicPath": "{{ website }}:3000/content/themes/base",
+  "publicPath": "/content/themes/{{ name }}/dist",
   "cacheBusting": "[name]_[hash:8]",
   "env": {
     "production": {

@@ -5,13 +5,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const FriendlyErrors = require('friendly-errors-webpack-plugin')
 
 var baseWebpackConfig = require('./webpack.base.conf')
+var config = require('../config')
 
 module.exports = merge(baseWebpackConfig, {
   context: path.resolve(__dirname, '..'),
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].js',
-    publicPath: 'https://local.synagogue-consulting.com:3000/assets/'
+    publicPath: config.devUrl + ':' + config.devPort + '/assets/'
   },
   module: {
     rules: [

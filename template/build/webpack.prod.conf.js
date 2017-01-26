@@ -6,13 +6,14 @@ const CleanPlugin = require('clean-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var baseWebpackConfig = require('./webpack.base.conf')
+var config = require('../config')
 
 module.exports = merge(baseWebpackConfig, {
   context: path.resolve(__dirname, '..'),
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name]_[hash:8].js',
-    publicPath: '/content/themes/webpacktest/dist/'
+    publicPath: config.publicPath
   },
   module: {
     rules: [
