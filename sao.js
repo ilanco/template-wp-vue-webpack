@@ -29,7 +29,7 @@ module.exports = {
       store: true
     },
     website: {
-      message: 'The URL of your website?',
+      message: 'The URL of your production website (no trailing slash)?',
       default: 'https://www.ou.org',
       store: true
     },
