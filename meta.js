@@ -11,6 +11,10 @@ module.exports = {
       message: "How would you describe the new theme?",
       default: "My superb Wordpress theme"
     },
+    title: {
+      message: 'The title of your website?',
+      default: 'Orthodox Union'
+    },
     website: {
       message: 'The URL of your website?',
       default: 'https://www.ou.org'
