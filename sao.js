@@ -23,6 +23,13 @@ module.exports = {
       default: 'https://www.ou.org',
       store: true
     },
+    text_domain: {
+      message: 'Domain to retrieve the translated text?',
+      default({name}) {
+        return `${name}`
+      },
+      store: true
+    },
     username: {
       message: 'What is your GitHub username?',
       role: 'git:name',

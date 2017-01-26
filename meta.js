@@ -19,6 +19,12 @@ module.exports = {
       message: 'The URL of your website?',
       default: 'https://www.ou.org'
     },
+    text_domain: {
+      message: 'Domain to retrieve the translated text?',
+      default({name}) {
+        return `${name}`
+      }
+    },
     username: {
       type: "string",
       message: "What is your GitHub username"
