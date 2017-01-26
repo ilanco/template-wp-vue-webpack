@@ -51,7 +51,7 @@ module.exports = {
     },
     username: {
       message: 'What is your GitHub username?',
-      role: 'git:name',
+      role: 'git:username',
       store: true
     },
     email: {
