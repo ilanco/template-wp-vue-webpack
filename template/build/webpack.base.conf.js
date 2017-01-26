@@ -12,7 +12,7 @@ module.exports = {
   },
   entry: config.entry,
   output: {
-    path: path.resolve(projectRoot , 'dist')
+    path: path.resolve(projectRoot, 'dist')
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
