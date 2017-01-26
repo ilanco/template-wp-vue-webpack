@@ -7,6 +7,13 @@
     "type": "git"
   },
   "author": "ilanco <ilanco@gmail.com> (github.com/ilanco)",
+  "contributors": [
+    {
+      "name": "Ilan Cohen",
+      "email": "ilanco@gmail.com",
+      "url": "github.com/ilanco"
+    }
+  ],
   "license": "MIT",
   "files": [
     "sao.js",
