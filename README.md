@@ -51,6 +51,36 @@ $ sao wp-vue-webpack
 $ sao wp-vue-webpack new-theme
 ```
 
+## Development server
+
+Before running the dev server, we need to run `npm install` (or `yarn install`)
+in the theme root folder.
+
+```bash
+# will install the necessary node modules
+$ npm instal
+```
+
+When all node modules are installed we can run the development server.
+
+```bash
+$ npm run dev
+```
+
+The assets will be available from your chosen url at port 3000. The scheme is
+https, and the certificate needs to be added to the list of exceptions.
+Navigate with your browser to [https://website.local:3000](https://website.local:3000)
+where website.local is the url to your local vm or localhost. Accept the
+certificate and navigate to your wordpress setup. The assets will be loaded
+from the dev server with hot module reloading enabled.
+
+## Compile for production
+
+```bash
+# will compile all assets for production
+$ npm run build:production
+```
+
 ## Folder Structure
 
 The destination folder is `./dist`.
@@ -75,4 +105,5 @@ The destination folder is `./dist`.
 MIT &copy; [ilanco](https://github.com/ilanco)
 
 ## Credits
+
 Made possible by [Orthodox Union](https://ou.org).
