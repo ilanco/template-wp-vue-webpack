@@ -4,7 +4,8 @@
   "comments": false,
   "env": {
     "test": {
-      "plugins": [ "istanbul" ]
+      "presets": ["latest", "stage-2"],
+      "plugins": ["istanbul"]
     }
   }
 }
