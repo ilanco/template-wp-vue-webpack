@@ -20,8 +20,8 @@ module.exports = merge(baseWebpackConfig, {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'vue-style-loader',
-          loader: [
+          fallback: 'vue-style-loader',
+          use: [
             {
               loader: 'css-loader',
               query: {
@@ -36,8 +36,8 @@ module.exports = merge(baseWebpackConfig, {
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: [
+          fallback: 'style-loader',
+          use: [
             'css-loader',
             {
               loader: 'sass-loader',
