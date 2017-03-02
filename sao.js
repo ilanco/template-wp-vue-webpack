@@ -58,6 +58,10 @@ module.exports = {
       message: 'What is your GitHub email?',
       role: 'git:email',
       store: true
+    },
+    eslint: {
+      type: 'confirm',
+      message: "Use ESLint to lint your code?"
     }
   },
   filters: {

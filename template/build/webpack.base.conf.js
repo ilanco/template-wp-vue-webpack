@@ -22,6 +22,7 @@ module.exports = {
   },
   module: {
     rules: [
+      {{#eslint}}
       {
         enforce: 'pre',
         test: /\.vue$/,
@@ -40,6 +41,7 @@ module.exports = {
         ],
         exclude: /node_modules/
       },
+      {{/eslint}}
       {
         test: /\.vue$/,
         loader: 'vue-loader',

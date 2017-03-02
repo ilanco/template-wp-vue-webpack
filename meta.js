@@ -50,6 +50,10 @@ module.exports = {
       type: "string",
       message: "What is your GitHub email"
     },
+    eslint: {
+      type: "confirm",
+      message: "Use ESLint to lint your code?"
+    },
   },
   completeMessage: 'To get started:\n\n  cd {{destDirName}}\n  yarn\n  yarn dev\n'
 }
