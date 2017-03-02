@@ -4,7 +4,7 @@
   "description": "{{ description }}",
   "scripts": {
     "build": "webpack --progress --config build/webpack.prod.conf.js",
-    "build:production": "npm run build -s -- -p",
+    "build:production": "NODE_ENV=production npm run build -s -- -p",
     "dev": "node build/dev-server.js"
   },
   "author": "{{ author }}",
