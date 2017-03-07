@@ -9,7 +9,7 @@
   ],
   "devUrl": "{{ dev_website }}",
   "devPort": 3000,
-  "publicPath": "/content/themes/{{ name }}/dist",
+  "publicPath": "/content/themes/{{ name }}/dist/",
   "cacheBusting": "[name]_[hash:8]",
   "env": {
     "production": {
