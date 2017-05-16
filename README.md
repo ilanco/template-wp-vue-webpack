@@ -66,6 +66,7 @@ When all node modules are installed we can run the development server.
 ```bash
 $ npm run dev
 ```
+if you get a node-scss error run `npm rebuild node-sass`
 
 The assets will be available from your chosen url at port 3000. The scheme is
 https, and the certificate needs to be added to the list of exceptions.
